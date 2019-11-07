@@ -4,6 +4,12 @@ function Dashboard() {
   const [strikes, setStrikes] = useState(0);
   const [balls, setBalls] = useState(0);
 
+  if (strikes > 2) {
+    setStrikes(0);
+  } else if (balls > 3) {
+    setBalls(0);
+  }
+
   const handleStrikes = () => setStrikes(strikes + 1);
   const handleBalls = () => setBalls(balls + 1);
   return (
@@ -15,7 +21,7 @@ function Dashboard() {
       <div className="Buttons">
         <button onClick={handleStrikes}>Strike</button>
         <button onClick={handleBalls}>Ball</button>
-        <button>Foul</button>
+        <button onClick={handleStrikes}>Foul</button>
       </div>
     </div>
   );
