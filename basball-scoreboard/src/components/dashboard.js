@@ -3,6 +3,9 @@ import React, { useState } from "react";
 function Dashboard() {
   const [strikes, setStrikes] = useState(0);
   const [balls, setBalls] = useState(0);
+
+  const handleStrikes = () => setStrikes(strikes + 1);
+  const handleBalls = () => setBalls(balls + 1);
   return (
     <div className="container">
       <div className="Scores">
@@ -10,8 +13,8 @@ function Dashboard() {
         <h2>{balls}</h2>
       </div>
       <div className="Buttons">
-        <button>Strike</button>
-        <button>Ball</button>
+        <button onClick={handleStrikes}>Strike</button>
+        <button onClick={handleBalls}>Ball</button>
         <button>Foul</button>
       </div>
     </div>
