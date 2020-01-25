@@ -10,6 +10,7 @@ function App() {
 
   return (
     <div className="app-container">
+      <h1>Space Ball Scoreboard</h1>
       <div className="App">
         <Display strikes={strikes} balls={balls} />
       </div>

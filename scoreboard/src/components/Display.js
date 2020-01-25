@@ -5,11 +5,11 @@ const Display = props => {
     <div className="display-container">
       <div className="display-score">
         <h2>Strikes</h2>
-        {props.strikes}
+        <div className="score">{props.strikes}</div>
       </div>
       <div className="display-score">
         <h2>Balls</h2>
-        {props.balls}
+        <div className="score ">{props.balls}</div>
       </div>
     </div>
   );
