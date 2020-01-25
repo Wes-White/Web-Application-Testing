@@ -1,0 +1,40 @@
+.app-container {
+  text-align: center;
+  background-image: url("./img/bg.JPG");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+}
+
+.display-container {
+  margin: 0 auto;
+  border: 1px solid black;
+  height: 400px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.display-score {
+  border: 1px solid red;
+  width: 48%;
+  margin: 10px;
+  height: 300px;
+}
+
+.controller-container {
+  height: 350px;
+  background-color: aqua;
+  width: 250px;
+  margin: 0 auto;
+}
